@@ -13,7 +13,7 @@ export default function RootNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="MainNavigation">
-        <Stack.Screen
+        {/* <Stack.Screen
           name="ValidationScreen"
           component={ValidationScreen}
           options={{
@@ -34,7 +34,7 @@ export default function RootNavigation() {
           options={{
             headerTitle: "Registrar",
           }}
-        />
+        /> */}
         <Stack.Screen
           name="MainNavigation"
           component={MainNavigation}
@@ -53,14 +53,14 @@ export function MainNavigation() {
   return (
     <MBT.Navigator>
       <MBT.Screen name="Home" component={HomeScreen} />
-      <MBT.Screen
+      {/* <MBT.Screen
         name="CadastrarAnimal"
         component={CadastrarAnimal}
         options={{
           headerTitle: "Cadastrar Animal",
           tabBarIcon: "plus",
         }}
-      />
+      /> */}
     </MBT.Navigator>
   );
 }
